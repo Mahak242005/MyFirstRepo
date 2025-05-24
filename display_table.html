@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table{
+            display: table;
+            width: 100%; 
+            border:collapse;
+            margin: auto;
+            background-color: cadetblue;
+        }
+
+        .captio{
+            display: table-caption;
+            caption-side: top;
+
+        }
+        
+        .row{
+            display: table-row;
+        }
+
+        .cell{
+            display: table-cell;
+            padding:10px;
+            border: 1px solid black;
+            text-align: center; 
+        }
+        .header{
+            display: table-header-group;
+            background-color: brown;
+        }
+        .footer{
+            display: table-footer-group;
+            background-color: burlywood;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="table">
+        <div class="caption">table property</div>
+
+        <div class="header">
+            <div class="cell">heading1</div>
+            <div class="cell">heading2</div>
+            <div class="cell">heading3</div>
+        </div>
+        <div class="row">
+            <div class="cell">cell1</div>
+            <div class="cell">cell2</div>
+            <div class="cell">cell3</div>
+        </div>
+        <div class="row">
+            <div class="cell">cell4</div>
+            <div class="cell">cell5</div>
+            <div class="cell">cell6</div>
+        </div>
+        <div class="footer">
+            <div class="cell"></div>
+            <div class="cell">total record</div>
+            <div class="cell">2</div>
+        </div>
+    </div>
+</body>
+</html>
