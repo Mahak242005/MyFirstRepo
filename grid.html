@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 1fr 2fr; */
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+            /* grid-template-rows: 50px 100px ; */
+            grid-gap: 20px;
+            grid-auto-rows: minmax(100px,auto);
+            grid-auto-columns: minmax(100px,auto);
+            /* column-gap: 30px;
+            row-gap: 40px; */
+        }
+        .item{
+            background-color: lightcoral;
+            border: 3px solid  ;
+        }
+        /* #item2{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        } */
+
+        #item1{
+            /* grid-column-start: 1;
+            grid-column-end: 5; */
+            grid-column: 1 / 5;
+        }
+
+        .item_container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .nested_item{
+            border: 3px solid blue;
+            background-color: burlywood;
+        }
+        /* #item3{
+           grid-column:1/span 2 ;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam possimus, vero explicabo recusandae fuga officia ipsum inventore distinctio sequi aliquid tenetur iusto at placeat vel. Soluta dolores, suscipit voluptatum aut a fugiat iusto exercitationem provident, temporibus sit sequi corporis quo error nihil assumenda. Dolores molestias optio dolore iste quis esse. Quaerat dicta facere voluptates debitis architecto dolore eum inventore iure praesentium amet! Amet fugiat minus sequi, dicta praesentium a beatae quia, nostrum totam omnis cum. Dolores alias ab explicabo commodi voluptas blanditiis similique nam earum dolorem, tenetur omnis veritatis ullam ipsum facere error sapiente voluptatum animi. Fuga quod veritatis adipisci?</div> -->
+
+        <div class="item item_container" id="item1">
+            <div class="nested_item">item1</div>
+            <div class="nested_item">item2</div>
+            <div class="nested_item">item3</div>
+        </div>
+        <div class="item" id="item2">item2</div>
+        <div class="item" id="item3">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+    </div>
+</body>
+</html>
