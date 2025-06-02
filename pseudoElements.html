@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::before{
+            content: 'extra content ';
+            font-size: 30px;
+        }
+        p::after{
+            content: ' mahak ';
+        }
+        p::first-line{
+            font-size: 20px;
+        }
+        p::first-letter{
+            color: blue
+        }
+        p::selection{
+            background-color: cadetblue;
+        }
+        input::placeholder{
+            color: red;
+        }
+        li::marker{
+            color: brown;
+        }
+
+
+
+        div{
+            background-color: coral;
+            height: 200px;
+            width: 200px;
+            position: relative;
+        }
+        div::before{
+            content: '';
+            background-color: cadetblue;
+            height: 80%;
+            width: 80%;
+            position: absolute;
+        }
+        div::after{
+            content: '';
+            background-color: black;
+            height: 60%;
+            width: 60%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere odio quo minus atque a commodi sed nam illo ratione ipsa facilis, quis voluptatum alias veniam perferendis incidunt magni aperiam. Officiis?</p>
+    <p></p>
+    <input type="text" placeholder="name">
+    <ol>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+    </ol>
+
+
+    <div></div>
+</body>
+</html>

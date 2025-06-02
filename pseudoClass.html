@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:hover{
+            color: blueviolet;
+        }
+        input:focus{
+            border: 2px solid brown;
+            outline: none;
+        }
+        a:active{
+            color: crimson;
+        }
+        a.visited{
+            color: green;
+        }
+        button:active{
+            background-color: burlywood;
+        }
+        /* li:first-child{
+            text-decoration: underline;
+        }
+        li:nth-child(odd){
+            font-size: 30px;
+        } */
+        li:not(li:first-child){
+            text-decoration: underline;
+            /* text-decoration-style:dotted ; */
+        }
+        input.c1:checked{
+            background-color: blueviolet;
+        }
+        input:required{
+            border: 2px solid black;
+            color: brown;
+        }
+        li:first-of-type{
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+       <li>item1</li>
+       <li>item2</li>
+       <li>item3</li>
+       <li>item4</li>
+       <li>item5</li>
+    </ol>
+    <input  type="text" placeholder="search">
+    <button>search</button>
+    <br>
+    <a href="color.html">click</a>
+    <br>
+    <input class="c1" type="checkbox">1st checkbox <br>
+    <input class="c2" type="checkbox">2nd checkbox
+    <br>
+    <input type="text" placeholder="name" required>
+</body>
+</html>
