@@ -1,0 +1,27 @@
+ @media screen and (max-width:600px){
+            header{
+                position: relative;                
+            }
+            nav {
+                display: none;
+            }
+            header .fa-bars{
+                display: block;
+            }
+            header nav{
+                top: 50px;
+                position: absolute;
+                width: 25%;
+                right: 0;
+                height: 100vh;
+                padding-top: 30px;
+                background-color: burlywood;
+            }
+            nav ul{
+                flex-direction: column;
+                text-align: center;
+            }
+            main{
+                margin-left: 25px;
+            }
+        }
