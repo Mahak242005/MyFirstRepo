@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: cadetblue;
+            /* animation: firstAnimation 2s infinite; */
+            animation-name: firstAnimation;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-fill-mode: backwards;
+        }
+
+        @keyframes firstAnimation{
+            /* to{
+                transform: translateX(300px);
+            } */
+
+            0%{
+                background-color: #511D43;
+            }
+            10%{
+                background-color: #901E3E;
+            }
+            20%{
+                border-color: #DC2525;
+            }
+            30%{
+                background-color: #9BC09C;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
